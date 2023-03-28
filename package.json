@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "intl-tel-input": "^17.0.21",
+    "sass": "^1.60.0"
+  }
+}
