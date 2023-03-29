@@ -24,9 +24,15 @@ button {
 }
 
 .container {
-  max-width: 1210px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 920px) {
+  .container {
+    max-width: 1210px;
+  }
 }
 
 .header_with_hero {
@@ -34,8 +40,13 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/main_img.jpeg");
+  background-image: url("../images/main_img_mob.jpg");
   margin: 0;
+}
+@media screen and (min-width: 920px) {
+  .header_with_hero {
+    background-image: url("../images/main_img.jpeg");
+  }
 }
 
 .header {
@@ -45,8 +56,14 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
-  margin-bottom: 105px;
+  padding-top: 35px;
+  margin-bottom: 85px;
+}
+@media screen and (min-width: 920px) {
+  .header {
+    padding-top: 40px;
+    margin-bottom: 105px;
+  }
 }
 .header__box {
   display: -webkit-box;
@@ -77,24 +94,50 @@ button {
   transition: 0.5s;
 }
 .header__title {
-  margin-left: 75px;
+  margin-left: 60px;
   font-weight: 400px;
   font-size: 20px;
   line-height: 1.3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+@media screen and (min-width: 920px) {
+  .header__title {
+    margin-left: 75px;
+  }
 }
 
-.hero {
-  width: 100%;
+@media screen and (min-width: 920px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.hero__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.hero__left {
-  width: 800px;
-  position: relative;
+@media screen and (min-width: 920px) {
+  .hero__left {
+    position: relative;
+    width: 800px;
+  }
 }
 .hero__title {
-  position: absolute;
   max-width: 800px;
   font-style: normal;
   font-weight: 500;
@@ -102,6 +145,11 @@ button {
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
+}
+@media screen and (min-width: 920px) {
+  .hero__title {
+    position: absolute;
+  }
 }
 .hero__title-end {
   color: #fda700;
@@ -113,8 +161,12 @@ button {
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
-  margin-top: 290px;
-  color: #ffffff;
+}
+@media screen and (min-width: 920px) {
+  .hero__txt {
+    margin-top: 290px;
+    color: #ffffff;
+  }
 }
 .hero__form {
   display: -webkit-box;
